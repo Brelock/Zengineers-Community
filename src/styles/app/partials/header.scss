@@ -1,0 +1,36 @@
+
+
+  .mainHeader{
+    .logoZ{
+      font-family: $secondaryFont;
+      text-align: center;
+      display: flex;
+      height: 100px;
+      line-height: 30px;
+      font-size: 30px;
+      font-weight: 700;
+      a{
+        height: 100%;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        color: $primaryColor;
+        line-height: unset;
+      }
+     }
+  }
+
+
+@media (min-width: $containerWidth){
+  .mainHeader {
+    .logoZ{
+      // width: 280px;
+      line-height: 40px;
+      font-size: 40px;
+    }
+    
+  }
+
+}
+
+

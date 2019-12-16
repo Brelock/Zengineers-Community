@@ -1,0 +1,91 @@
+.breadcrumbs{
+    background-image: url(../img/pattern_z.jpg);
+}
+.conteinerInfo{
+    padding-bottom: 32px;
+    p{
+        padding-top: 25px;
+        span{
+            color: black;
+        }
+        a {
+            text-decoration: underline;
+            color: #777777;
+        }
+    }
+}
+.iframeMaps{
+    padding: 30px 0 0 0;
+}
+.breadcrumbsBlock{    
+    .breadcrumbsTitle{
+        color: #fff;
+        padding-top: 22px;
+        font-size: 27px;
+        letter-spacing: 1px;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 25px 0;
+        color: #bfbfbf;
+
+        li {
+          display: inline-block;
+          position: relative;
+          padding-right: 2em;
+          margin: 0;
+          font-size: 14px;
+          letter-spacing: 1px;
+          font-weight: 200;
+       
+        }
+          li:after {
+            content: '>';
+            position: absolute;
+            display: inline-block;
+            right: 0;
+            width: 2em;
+            text-align: center;
+          }
+        li:last-child {
+          font-weight: 300;
+        }
+          li:last-child:after {
+            content: '';
+          }
+        a {
+          text-decoration: none;
+          display: inline-block;
+          color: #fff;
+          font-size: 14px;
+          white-space: nowrap;
+          
+        }
+          a:hover {
+            text-decoration: underline;
+          }
+      }
+      .collapsed li {
+        overflow: hidden;
+      }
+      .collapsed a {
+        max-width: 2em;
+        transition: max-width 300ms ease-in-out;
+      }
+        .collapsed a:hover,
+        .collapsed a:focus,
+        .collapsed li a {
+          max-width: 1000px;
+        }
+        .collapsed li:hover:after {
+          padding-left: 0em;
+          background: transparent;
+        }
+}  
+
+@media (min-width: $containerWidth){
+
+}
+  

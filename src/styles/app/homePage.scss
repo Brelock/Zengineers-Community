@@ -1,0 +1,70 @@
+*{
+	box-sizing: border-box;
+}
+ul {
+	padding: 20px 0 0 20px;
+	list-style: circle;
+}
+ ol{
+	padding: 20px 0 0 20px;
+	list-style: decimal;
+}
+ img{
+	padding-top: 20px;
+}
+
+body{
+	
+	min-height: 100vh;
+	// height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	font-family: $mainFont;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-bottom: -10%;
+	// position: relative;
+	// box-sizing: border-box;
+	// padding-bottom: 40px;
+	.entry-content, .helpProjectBot{
+		padding: 20px 0 30px;
+	}
+
+	.wrappConteiner{
+		max-width: 1150px;
+		width: 100%;
+		margin: 0 auto;
+		padding-left:20px ;
+		padding-right: 20px; 
+        h2{
+			font-size: 24px;
+			font-family: $secondaryFont;
+			padding: 20px;
+			text-align: center;
+			color: #000;
+
+		}
+		ul{
+			p{
+				font-weight: 400;
+				font-size: 16px;
+				font-family: $mainFont;
+				line-height: 24px;
+			}
+		}
+
+		.whoAreWe{
+			.whoAreWeBot{
+				padding-top: 20px;
+			}
+			
+		}
+
+		.doign, .likeThis{
+			ul, .doignBot{
+				padding-top: 20px;
+			}
+		}
+	}
+}
