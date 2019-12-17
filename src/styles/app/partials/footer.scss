@@ -1,34 +1,43 @@
-footer{
+footer {
 }
 .mainFooter {
-	background-color: $primaryColor;
-	color: $footerFontColor;
-	
-	.mainFooterContent{
-		display: flex;
-		height: 70px;
-		justify-content: space-between;
-		align-items: center;
-		font-size: 13px;
-		letter-spacing: 1px;
-		font-weight: 300;
-        .contentLeft{
-		}
-		.contentRight{
-			display: flex;
-			align-items: center;
-			.contentRightTitle{
-				padding-right: 8px;
-			}
-           .iconZ{
-			   width: 20px;
-			   height: 20px;
-			   img{
-				padding: 0;
-			   }
-		   }
-		}
-	}
+  background-color: $primaryColor;
+  color: $footerFontColor;
+
+  .mainFooterContent {
+    display: flex;
+    height: 70px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    .contentLeft {
+    }
+    .contentRight a{
+      display: flex;
+      align-items: center;
+      .contentRightTitle {
+		padding-right: 8px;
+		color: $footerFontColor;
+      }
+      .iconZ {
+        width: 20px;
+        height: 20px;
+        img {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
 
-
+@media (min-width: $containerWidth) {
+  .mainFooter {
+    .mainFooterContent {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
